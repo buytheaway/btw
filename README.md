@@ -1,12 +1,11 @@
 # btw
 git init
 git add .
-git commit -m "// Product interface
+git commit -m "
 interface Vehicle {
     void manufacture();
 }
 
-// Concrete Product
 class Car implements Vehicle {
     @Override
     public void manufacture() {
@@ -14,7 +13,6 @@ class Car implements Vehicle {
     }
 }
 
-// Concrete Product
 class Motorcycle implements Vehicle {
     @Override
     public void manufacture() {
@@ -22,7 +20,6 @@ class Motorcycle implements Vehicle {
     }
 }
 
-// Factory class
 class VehicleFactory {
     // Factory method
     public static Vehicle createVehicle(String type) {
@@ -37,7 +34,6 @@ class VehicleFactory {
     }
 }
 
-// Client class
 public class Main {
     public static void main(String[] args) {
         // Create a car
@@ -45,8 +41,6 @@ public class Main {
         if (car != null) {
             car.manufacture();
         }
-
-        // Create a motorcycle
         Vehicle motorcycle = VehicleFactory.createVehicle("motorcycle");
         if (motorcycle != null) {
             motorcycle.manufacture();
