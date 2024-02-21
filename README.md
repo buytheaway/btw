@@ -2,6 +2,7 @@
 git init
 git add .
 git commit -m "
+//
 interface Vehicle {
     void manufacture();
 }
@@ -47,6 +48,7 @@ public class Main {
         }
     }
 }
+//
 а"
-git remote add origin <URL вашего репозитория на GitHub>
+git remote add origin https://github.com/buytheaway/btw
 git push -u origin master
